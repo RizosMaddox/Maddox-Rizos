@@ -1,26 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-<body>
-    <h1>HTML</h1>
-    <p><strong>HTML</strong> is great. It defines the structure of webpages and it determines how data is displayed online. <br>
-    What you're looking at right now is HTML code, read and interpreted by your browser. But this doesn't make HTML a <del>programming language</del>.</p>
+<form>
+  <fieldset>
+    <legend>Feedback Form</legend>
 
-    <hr>
+    <!-- Text input with placeholder and value -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" value="">
 
-    <h3>A Markup Language</h3>
-    <p>HTML is a type of markup language. It encapsulates, or "marks up" data within HTML tags. The <br>
-    HTML describes the data to the browser, and the browser then displays the data accordingly.</p>
+    <br><br>
 
-    <hr>
+    <!-- Textarea with placeholder -->
+    <label for="comments">Your Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your feedback here..."></textarea>
 
-    <p><strong>For example:</strong><br>
-    If we want to write the chemical equation H<sub>2</sub> + O<sub>2</sub> = H<sub>2</sub>O <br><br>
-    or Mathematical equation X<sup>2</sup> + Y<sup>2</sup> = Z<sup>2</sup> <br><br>
-    or Special characters &amp; © <br><br>
-    you should use the suitable tag for each one :)</p>
-</body>
-</html>
+    <br><br>
+
+    <!-- Select dropdown -->
+    <label for="rating">How would you rate us?</label>
+    <select id="rating" name="rating">
+      <option value="">Select</option>
+      <option value="excellent">Excellent</option>
+      <option value="good">Good</option>
+      <option value="average">Average</option>
+      <option value="poor">Poor</option>
+    </select>
+
+    <br><br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit Feedback</button>
+  </fieldset>
+</form>
